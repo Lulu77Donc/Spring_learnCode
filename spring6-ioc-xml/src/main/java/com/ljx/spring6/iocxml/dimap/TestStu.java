@@ -10,7 +10,7 @@ public class TestStu {
     public void testStu(){
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("bean-diref.xml");
-        Student student = context.getBean("student", Student.class);
+        Student student = context.getBean("studentp", Student.class);
         student.run();
     }
 }
