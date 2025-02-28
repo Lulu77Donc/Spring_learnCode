@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring中bean对象Ioc容器引入外部属性文件注入">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/scope/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/scope/TestOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-scope.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="Ioc基于xml管理bean，bean的作用域，通过scope管理bean单实例 多实例">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/life/TestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/life/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-life.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestOrders">
+  <component name="RunManager" selected="Application.TestUser">
     <configuration name="TestEmp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.ditest.TestEmp" />
       <module name="spring6-ioc-xml" />
@@ -83,18 +83,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBook.testSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.life.TestUser" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.iocxml.di.*" />
+          <option name="PATTERN" value="com.ljx.spring6.iocxml.life.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.iocxml.di" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.di.TestBook" />
-      <option name="METHOD_NAME" value="testSetter" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestUser" />
         <item itemvalue="Application.TestOrders" />
         <item itemvalue="JUnit.TestJdbc.demo2" />
         <item itemvalue="JUnit.TestStu.testStu" />
         <item itemvalue="Application.TestEmp" />
-        <item itemvalue="JUnit.TestBook.testSetter" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +149,7 @@
       <workItem from="1740624801259" duration="3629000" />
       <workItem from="1740629675569" duration="2453000" />
       <workItem from="1740646701334" duration="3958000" />
-      <workItem from="1740710098520" duration="13720000" />
+      <workItem from="1740710098520" duration="15426000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -202,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740731846513</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ioc基于xml管理bean，bean的作用域，通过scope管理bean单实例 多实例">
+      <option name="closed" value="true" />
+      <created>1740733070733</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740733070733</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +242,7 @@
     <MESSAGE value="spring中bean对象Ioc容器集合bean类型属性注入" />
     <MESSAGE value="spring中bean对象Ioc容器p命名空间类型属性注入" />
     <MESSAGE value="spring中bean对象Ioc容器引入外部属性文件注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring中bean对象Ioc容器引入外部属性文件注入" />
+    <MESSAGE value="Ioc基于xml管理bean，bean的作用域，通过scope管理bean单实例 多实例" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ioc基于xml管理bean，bean的作用域，通过scope管理bean单实例 多实例" />
   </component>
 </project>
