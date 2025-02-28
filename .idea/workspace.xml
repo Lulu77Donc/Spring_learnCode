@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring中bean对象Ioc容器集合bean类型属性注入">
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring中bean对象Ioc容器p命名空间类型属性注入">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/jdbc/TestJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-diref.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-diref.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,26 +57,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestStu.testStu">
+  <component name="RunManager" selected="JUnit.TestJdbc.demo2">
     <configuration name="TestEmp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.ditest.TestEmp" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ljx.spring6.iocxml.ditest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.TestUser" />
-      <module name="spring6-ioc-xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.iocxml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,6 +100,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestJdbc.demo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-ioc-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ljx.spring6.iocxml.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.iocxml.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.jdbc.TestJdbc" />
+      <option name="METHOD_NAME" value="demo2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestStu.testStu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
@@ -128,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestJdbc.demo2" />
         <item itemvalue="JUnit.TestStu.testStu" />
         <item itemvalue="Application.TestEmp" />
         <item itemvalue="JUnit.TestBook.testSetter" />
         <item itemvalue="Application.TestUserDao" />
-        <item itemvalue="Application.TestUser" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +153,7 @@
       <workItem from="1740624801259" duration="3629000" />
       <workItem from="1740629675569" duration="2453000" />
       <workItem from="1740646701334" duration="3958000" />
-      <workItem from="1740710098520" duration="10219000" />
+      <workItem from="1740710098520" duration="12537000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -181,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740728813751</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spring中bean对象Ioc容器p命名空间类型属性注入">
+      <option name="closed" value="true" />
+      <created>1740729762206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740729762206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +228,7 @@
     <MESSAGE value="spring学习记录" />
     <MESSAGE value="spring中bean对象map属性注入" />
     <MESSAGE value="spring中bean对象Ioc容器集合bean类型属性注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring中bean对象Ioc容器集合bean类型属性注入" />
+    <MESSAGE value="spring中bean对象Ioc容器p命名空间类型属性注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring中bean对象Ioc容器p命名空间类型属性注入" />
   </component>
 </project>
