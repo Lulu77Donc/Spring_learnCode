@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring学习记录">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/TestStu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-dimap.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring中bean对象map属性注入">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/Lesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-diref.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/TestStu.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/ljx/spring6/iocxml/dimap/TestStu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -150,7 +150,7 @@
       <workItem from="1740624801259" duration="3629000" />
       <workItem from="1740629675569" duration="2453000" />
       <workItem from="1740646701334" duration="3958000" />
-      <workItem from="1740710098520" duration="5984000" />
+      <workItem from="1740710098520" duration="9269000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -168,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740714516969</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="spring中bean对象map属性注入">
+      <option name="closed" value="true" />
+      <created>1740716276479</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740716276479</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +187,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -187,6 +207,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring学习记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring学习记录" />
+    <MESSAGE value="spring中bean对象map属性注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring中bean对象map属性注入" />
   </component>
 </project>

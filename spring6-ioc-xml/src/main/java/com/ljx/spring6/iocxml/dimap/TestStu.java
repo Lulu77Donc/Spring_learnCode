@@ -9,7 +9,7 @@ public class TestStu {
     @Test
     public void testStu(){
         ApplicationContext context =
-                new ClassPathXmlApplicationContext("bean-dimap.xml");
+                new ClassPathXmlApplicationContext("bean-diref.xml");
         Student student = context.getBean("student", Student.class);
         student.run();
     }
