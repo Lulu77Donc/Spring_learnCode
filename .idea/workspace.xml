@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring学习记录" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,11 +144,24 @@
       <workItem from="1740624801259" duration="3629000" />
       <workItem from="1740629675569" duration="2453000" />
       <workItem from="1740646701334" duration="3958000" />
-      <workItem from="1740710098520" duration="3421000" />
+      <workItem from="1740710098520" duration="4119000" />
     </task>
+    <task id="LOCAL-00001" summary="spring学习记录">
+      <option name="closed" value="true" />
+      <created>1740714216465</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740714216465</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spring学习记录" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring学习记录" />
   </component>
 </project>
