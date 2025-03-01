@@ -49,3 +49,8 @@ spring会从属性中找到对应xml上配置的bean，这时候会根据你标�
 <context:component-scan base-package="com.ljx.spring6"></context:component-scan>
 ```
 base-package是要扫描的包及其子包，开启后我们就可以在class上加入注解（@Compoent，@Controller，@Repository，@Service）,之后我们就可以在测试类中直接获取bean了
+
+## @Autowired和@Qualifier联合注入
+@Autowired注解注入的方法有好几种，最常见的属性注入，还有创建属性set方法的set注入，构造方法注入，构造方法形参注入，还有只有一个构造函数可以不用注解隐性注入。
+除此之外还有一个比较特殊，需要用到两个注解
+打个比方，当我们dao层接口有两个实现类，正常使用autowired是无法注入的，两个bean冲突，所以我们需要在上qualifier value值为对应bean名字，就可以实现对应bean注入，不会冲突
