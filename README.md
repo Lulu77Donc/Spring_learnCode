@@ -40,3 +40,12 @@ public class UserController {
     </bean>
 ```
 spring会从属性中找到对应xml上配置的bean，这时候会根据你标签autowired去选择对应自动装配的方法
+
+# 基于注解管理bean
+## 开启组件扫描
+要想实现注解开发，spring最基本功能之一，为了不用再去xml文件中配置创建bean，我们要先开启组件扫描
+基本操作是：在xml配置文件中填入
+```xml
+<context:component-scan base-package="com.ljx.spring6"></context:component-scan>
+```
+base-package是要扫描的包及其子包，开启后我们就可以在class上加入注解（@Compoent，@Controller，@Repository，@Service）,之后我们就可以在测试类中直接获取bean了
