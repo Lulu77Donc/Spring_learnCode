@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="基于xml自动装配">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/bean/TestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="注解创建bean对象">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/autowired/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/autowired/Dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/autowired/Dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/autowired/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/autowired/Service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/autowired/TestUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-first/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-first/src/main/resources/bean.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,13 +62,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.com.ljx.spring6.bean.TestUser">
-    <configuration name="TestOrders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.scope.TestOrders" />
+  <component name="RunManager" selected="Application.TestUserController">
+    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.life.TestUser" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.iocxml.scope.*" />
+          <option name="PATTERN" value="com.ljx.spring6.iocxml.life.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.life.TestUser" />
-      <module name="spring6-ioc-xml" />
+    <configuration name="TestUserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.autowired.TestUserController" />
+      <module name="spring6-ioc-annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.iocxml.life.*" />
+          <option name="PATTERN" value="com.ljx.spring6.autowired.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestUserController" />
         <item itemvalue="Application.com.ljx.spring6.bean.TestUser" />
         <item itemvalue="Application.com.ljx.spring6.iocxml.auto.TestUser" />
         <item itemvalue="Application.com.ljx.spring6.iocxml.factorybean.TestUser" />
         <item itemvalue="Application.TestUser" />
-        <item itemvalue="Application.TestOrders" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +150,7 @@
       <workItem from="1740629675569" duration="2453000" />
       <workItem from="1740646701334" duration="3958000" />
       <workItem from="1740710098520" duration="18199000" />
-      <workItem from="1740796504742" duration="6784000" />
+      <workItem from="1740796504742" duration="8207000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -241,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740801307368</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="注解创建bean对象">
+      <option name="closed" value="true" />
+      <created>1740806540741</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740806540741</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +287,7 @@
     <MESSAGE value="单例bean对象生命周期" />
     <MESSAGE value="factorybean" />
     <MESSAGE value="基于xml自动装配" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于xml自动装配" />
+    <MESSAGE value="注解创建bean对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="注解创建bean对象" />
   </component>
 </project>
