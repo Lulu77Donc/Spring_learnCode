@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="@Autowired注解和@Qualifier注解联合注入">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/ljx/spring6/config/SpringConfig.java" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="全注解开发">
+      <change afterPath="$PROJECT_DIR$/spring6-reflect/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/ljx/reflect/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/ljx/reflect/TestCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestUserControllerAnno">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ljx.spring6" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestCar.test02">
     <configuration name="TestUserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.autowired.TestUserController" />
       <module name="spring6-ioc-annotation" />
@@ -97,39 +106,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.ljx.spring6.iocxml.auto.TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.auto.TestUser" />
-      <module name="spring6-ioc-xml" />
+    <configuration name="TestCar.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-reflect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.iocxml.auto.*" />
+          <option name="PATTERN" value="com.ljx.reflect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ljx.reflect" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.reflect.TestCar" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.ljx.spring6.iocxml.factorybean.TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.iocxml.factorybean.TestUser" />
-      <module name="spring6-ioc-xml" />
+    <configuration name="TestCar.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-reflect" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.iocxml.factorybean.*" />
+          <option name="PATTERN" value="com.ljx.reflect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ljx.reflect" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.reflect.TestCar" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCar.test02" />
+        <item itemvalue="JUnit.TestCar.test01" />
         <item itemvalue="Application.TestUserControllerAnno" />
         <item itemvalue="Application.TestUserController" />
         <item itemvalue="Application.com.ljx.spring6.bean.TestUser" />
-        <item itemvalue="Application.com.ljx.spring6.iocxml.auto.TestUser" />
-        <item itemvalue="Application.com.ljx.spring6.iocxml.factorybean.TestUser" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +161,7 @@
       <workItem from="1740646701334" duration="3958000" />
       <workItem from="1740710098520" duration="18199000" />
       <workItem from="1740796504742" duration="8207000" />
-      <workItem from="1740814776671" duration="1703000" />
+      <workItem from="1740814776671" duration="4241000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -252,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740816410888</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="全注解开发">
+      <option name="closed" value="true" />
+      <created>1740817299304</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1740817299304</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +316,7 @@
     <MESSAGE value="基于xml自动装配" />
     <MESSAGE value="注解创建bean对象" />
     <MESSAGE value="@Autowired注解和@Qualifier注解联合注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="@Autowired注解和@Qualifier注解联合注入" />
+    <MESSAGE value="全注解开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="全注解开发" />
   </component>
 </project>
