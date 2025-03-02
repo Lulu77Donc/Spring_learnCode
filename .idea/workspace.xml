@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="java反射-获取class对象，获取构造方法">
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="java反射-获取属性，属性赋值。获取方法，invoke执行方法">
+      <change afterPath="$PROJECT_DIR$/ljx.spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/TestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/anno/Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/anno/Di.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/bean/AnnotationApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/bean/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/ljx/reflect/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/ljx/reflect/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/ljx/reflect/TestCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/ljx/reflect/TestCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -63,13 +74,13 @@
       <recent name="com.ljx.spring6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCar.test04">
-    <configuration name="TestUserControllerAnno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.TestUserControllerAnno" />
-      <module name="spring6-ioc-annotation" />
+  <component name="RunManager" selected="Application.TestUser">
+    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.TestUser" />
+      <module name="ljx.spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.*" />
+          <option name="PATTERN" value="com.ljx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestUser" />
         <item itemvalue="JUnit.TestCar.test04" />
         <item itemvalue="JUnit.TestCar.test03" />
         <item itemvalue="JUnit.TestCar.test02" />
         <item itemvalue="JUnit.TestCar.test01" />
-        <item itemvalue="Application.TestUserControllerAnno" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +176,7 @@
       <workItem from="1740710098520" duration="18199000" />
       <workItem from="1740796504742" duration="8207000" />
       <workItem from="1740814776671" duration="5992000" />
-      <workItem from="1740885645645" duration="1301000" />
+      <workItem from="1740885645645" duration="17862000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -287,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740819863749</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="java反射-获取属性，属性赋值。获取方法，invoke执行方法">
+      <option name="closed" value="true" />
+      <created>1740887094128</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1740887094128</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +349,7 @@
     <MESSAGE value="@Autowired注解和@Qualifier注解联合注入" />
     <MESSAGE value="全注解开发" />
     <MESSAGE value="java反射-获取class对象，获取构造方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="java反射-获取class对象，获取构造方法" />
+    <MESSAGE value="java反射-获取属性，属性赋值。获取方法，invoke执行方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="java反射-获取属性，属性赋值。获取方法，invoke执行方法" />
   </component>
 </project>
