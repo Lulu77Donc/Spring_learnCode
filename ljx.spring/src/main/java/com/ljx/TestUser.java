@@ -4,6 +4,7 @@ import com.ljx.bean.AnnotationApplicationContext;
 import com.ljx.bean.ApplicationContext;
 import com.ljx.service.UserService;
 
+
 public class TestUser {
     public static void main(String[] args) {
         ApplicationContext context =

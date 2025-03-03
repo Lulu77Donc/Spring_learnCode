@@ -1,13 +1,16 @@
 package com.ljx.bean;
 
 import com.ljx.anno.Bean;
+import com.ljx.anno.Di;
 
 import java.io.File;
+import java.lang.reflect.Field;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class AnnotationApplicationContext implements ApplicationContext{
 
@@ -60,7 +63,11 @@ public class AnnotationApplicationContext implements ApplicationContext{
             throw new RuntimeException(e);
         }
 
+        //属性注入
+        loadDi();
+
     }
+
 
     //包扫描过程，实例化
     private static void loadBean(File file) throws Exception {
@@ -129,4 +136,38 @@ public class AnnotationApplicationContext implements ApplicationContext{
                 new AnnotationApplicationContext("com.ljx");
         context.getBean();
     }*/
+
+    //属性注入
+    private void loadDi() {
+        //实例化对象在beanFactory的map集合中
+        //1 遍历beanFactory的map集合
+        Set<Map.Entry<Class, Object>> entries = beanFactory.entrySet();
+        for (Map.Entry<Class, Object> entry : entries) {
+            //2 获取map集合每个对象（value），每个对象属性获取到
+            Object obj = entry.getValue();
+
+            //获取对象class
+            Class<?> clazz = obj.getClass();
+
+            //获取每个对象属性
+            Field[] declaredFields = clazz.getDeclaredFields();
+
+            //3 遍历得到每个对象属性数组，得到每个属性
+            for (Field field : declaredFields) {
+                //4 判断属性上是否有@Di注解
+                Di annotation = field.getAnnotation(Di.class);
+                if(annotation != null){
+                    //如果私有属性，设置可以设置值
+                    field.setAccessible(true);
+
+                    //5 如果有@Di注解，把对象进行设置（注入）
+                    try {
+                        field.set(obj,beanFactory.get(field.getType()));
+                    } catch (IllegalAccessException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            }
+        }
+    }
 }
