@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="手写Ioc容器-属性注入">
+      <change afterPath="$PROJECT_DIR$/spring6-aop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/CalculatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/CalculatorLogImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/CalculatorStaticProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/TestCal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/TestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/TestUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/bean/AnnotationApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/ljx.spring/src/main/java/com/ljx/bean/AnnotationApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +73,20 @@
       <recent name="com.ljx.spring6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestUser">
+  <component name="RunManager" selected="Application.TestCal">
+    <configuration name="TestCal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.aop.example.TestCal" />
+      <module name="spring6-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ljx.spring6.aop.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ljx.TestUser" />
       <module name="ljx.spring" />
@@ -77,22 +96,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCar.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-reflect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ljx.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.reflect" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.reflect.TestCar" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCal" />
         <item itemvalue="Application.TestUser" />
         <item itemvalue="JUnit.TestCar.test04" />
         <item itemvalue="JUnit.TestCar.test03" />
         <item itemvalue="JUnit.TestCar.test02" />
-        <item itemvalue="JUnit.TestCar.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +174,7 @@
       <workItem from="1740814776671" duration="5992000" />
       <workItem from="1740885645645" duration="17862000" />
       <workItem from="1740929770177" duration="804000" />
-      <workItem from="1740977724194" duration="2985000" />
+      <workItem from="1740977724194" duration="13745000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -301,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740887094128</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="手写Ioc容器-属性注入">
+      <option name="closed" value="true" />
+      <created>1740980904486</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1740980904486</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,6 +371,7 @@
     <MESSAGE value="全注解开发" />
     <MESSAGE value="java反射-获取class对象，获取构造方法" />
     <MESSAGE value="java反射-获取属性，属性赋值。获取方法，invoke执行方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="java反射-获取属性，属性赋值。获取方法，invoke执行方法" />
+    <MESSAGE value="手写Ioc容器-属性注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="手写Ioc容器-属性注入" />
   </component>
 </project>

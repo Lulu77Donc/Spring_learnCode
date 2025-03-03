@@ -77,3 +77,154 @@ base-package是要扫描的包及其子包，开启后我们就可以在class上
 这样我们属性赋值就完成了
 
 
+# 开发日志
+## 遇到的问题
+我在一直用push到github时，电脑崩溃蓝屏，我再次打开项目想要push时弹出0 file committed, 81 files failed to commit: 手写Ioc，bean的创建 cannot lock ref 'HEAD': unable to resolve reference 'refs/heads/master': reference broken
+gpt反应这是cannot lock ref 'HEAD': unable to resolve reference 'refs/heads/master': reference broken，这通常是由于 Git 仓库的 HEAD 或 refs/heads/master 引用损坏导致的。
+看来是因为.git文件损坏导致无法上传，github给的解决方法非常复杂。我再解决完问题后总结最方便的方法。
+首先，确保github上代码已经更新，然后我们删掉原来这个项目，在新的目录里（创建新的项目）用终端打开，用git重新克隆
+```git
+git clone "+github仓库http链接"
+```
+这样我们就可以从远端仓库同步到新的项目里，如果不确定远端仓库是否安全，可以先克隆，如果没有问题，就可以直接删除旧项目。或者可以check一下，这里我还没有试过
+
+### 补充
+我们在push后如果想要撤销，可以revert，这里撤销的是本地的仓库，我们在idea终端里直接强制push，就可以覆盖掉远程仓库。但是这样很容易有风险，建议先备份好数据。不然很容易文件丢失
+
+# 关于代理
+代理在java基础中也有学过，但是就像反射一样，代理在Spring中也尤为重要，特别是AOP的实现。
+前面关于代理的知识还是比较抽象，我们从简单例子实现，现在我们有一个Calculator接口，里面有加减乘除抽象方法。
+```java
+public interface Calculator {
+
+    int add(int i,int j);
+
+    int sub(int i,int j);
+
+    int mul(int i,int j);
+
+    int div(int i,int j);
+}
+```
+然后我们设立一个实现类用于完成方法最基础的功能
+```java
+public class CalculatorImpl implements Calculator{
+    @Override
+    public int add(int i, int j) {
+
+        int result = i + j;
+        System.out.println("方法内部 result=" + result);
+        return result;
+    }
+
+    @Override
+    public int sub(int i, int j) {
+        int result = i - j;
+        System.out.println("方法内部 result=" + result);
+        return result;
+    }
+
+    @Override
+    public int mul(int i, int j) {
+        int result = i * j;
+        System.out.println("方法内部 result=" + result);
+        return result;
+    }
+
+    @Override
+    public int div(int i, int j) {
+        int result = i / j;
+        System.out.println("方法内部 result=" + result);
+        return result;
+    }
+}
+
+```
+好了，现在我想要完成在这些方法基础上再加入日志功能，方法执行前和执行后我们都要执行，我们应该如何实现呢？
+其实无需修改实现类中方法的代码，实在是过于麻烦，我们在原有基础上加入代理类即可。
+首先我们要弄清楚，原来的功能我们不能舍弃，是不是让另一个类来实现我们现在的功能，顺便把扩展功能（日志）也实现。这里我直接引用动态代理
+想要获得我们想要的代理对象，第一步，是不是应该传入我们原来实现类的对象，在代理类中通过构造器传入变量。接着我们设计一个方法，用于返回代理对象
+其中核心是Proxy.newProxyInstance(classLoader,interfaces,invocationHandler)，姑且理解为JDK已经帮我们实现动态代理的方法了，封装起来，我们直接使用即可
+三个参数分别对应1 ClassLoader:加载动态生成代理类的类加载器。
+2 Class<?>[] interface:目标对象实现的所有接口的class类型数组。
+3 InvocationHandler:设置代理对象实现目标对象方法的过程。
+这里主要是invocationHandler，我们需要重写其中invoke方法，这里面包括我们基础功能和扩展功能，最后返回结果就可以了
+```java
+public class ProxyFactory {
+
+    //目标对象
+    private Object target;
+
+    public ProxyFactory(Object target) {
+        this.target = target;
+    }
+
+    //返回代理对象
+    public Object getProxy(){
+        /*
+        Proxy.newProxyInstance()方法
+        有三个参数
+        1 ClassLoader:加载动态生成代理类的类加载器
+        2 Class<?>[] interface:目标对象实现的所有接口的class类型数组
+        3 InvocationHandler:设置代理对象实现目标对象方法的过程
+        * */
+
+        //1 ClassLoader:加载动态生成代理类的类加载器
+        ClassLoader classLoader = target.getClass().getClassLoader();
+
+        //2 Class<?>[] interface:目标对象实现的所有接口的class类型数组
+        Class<?>[] interfaces = target.getClass().getInterfaces();
+
+        //3 InvocationHandler:设置代理对象实现目标对象方法的过程
+        InvocationHandler invocationHandler = new InvocationHandler() {
+
+            //1 代理对象
+            //2 需要重写目标对象方法
+            //3 method方法里面参数
+            @Override
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                //方法调用前执行
+                System.out.println("[动态代理][日志]" + method.getName()+"参数："+ Arrays.toString(args));
+                //调用目标方法
+                Object result = method.invoke(target, args);
+                //方法调用后执行
+                System.out.println("[动态代理][日志]" + method.getName()+"结果："+ result);
+                return result;
+            }
+        };
+        return Proxy.newProxyInstance(classLoader,interfaces,invocationHandler);
+
+    }
+}
+
+```
+
+别急，是不是还有很多问题
+## 为什么 JDK 动态代理必须基于接口？
+JDK 动态代理的原理：
+Proxy.newProxyInstance() 方法会在运行时动态创建一个代理类，该类实现了目标对象的所有接口。
+由于 Java 语言的设计 不允许动态继承具体类，但 允许实现接口，所以 JDK 代理要求 目标对象必须实现接口。
+当我们调用 new ProxyFactory(new CalculatorImpl()).getProxy(); 时：
+JDK 代理会动态创建一个 新的类，该类实现了 Calculator 接口。
+代理对象实际上是这个新类的实例，它并不是 CalculatorImpl 的实例，而是 实现了相同接口的一个代理对象。
+
+## 方法是在invoke实现的，然后才返回代理对象，我们是如何通过代理对象调用invoke的?
+JDK 动态代理调用 invoke 的过程
+   当你通过 代理对象 调用方法时，比如：
+```
+javaCalculator proxy = (Calculator) new ProxyFactory(new CalculatorImpl()).getProxy();
+proxy.add(3, 5);
+```
+其执行过程如下：
+代理对象接收 add(3, 5) 方法调用（实际上调用的是 JDK 生成的动态代理类）。
+代理对象的 add 方法内部会调用 InvocationHandler.invoke() 方法。
+在 invoke() 方法内部：
+先执行前置增强逻辑（打印日志）。
+通过 method.invoke(target, args) 反射调用目标对象的方法。
+记录日志，返回结果。
+最终返回计算结果 3 + 5 = 8。
+
+总结就是：
+代理对象是 JDK 生成的类，它实现了 Calculator 接口，但方法内部并没有真正执行 add() 逻辑，而是调用 InvocationHandler.invoke() 方法。
+Proxy.newProxyInstance() 会在运行时生成 $Proxy0 代理类，该类的 add() 方法内部直接调用 h.invoke()。
+h.invoke() 方法执行 日志增强逻辑 + 反射调用目标对象方法，最终返回方法结果。
