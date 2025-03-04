@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="手写Ioc容器-属性注入">
-      <change afterPath="$PROJECT_DIR$/spring6-aop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/CalculatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/CalculatorLogImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/CalculatorStaticProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/ProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/example/TestCal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="动态代理">
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/CalculatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/TestAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/resources/bean.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -64,16 +60,17 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "abba5ab6e636fa030a1129eba3ebe36d",
+    "spring.configuration.checksum": "04929b1fb3e6d1bef608b13c4c69cb95",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ljx.spring6.aop.annoaop" />
       <recent name="com.ljx.spring6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestCal">
+  <component name="RunManager" selected="JUnit.TestAop.testAdd">
     <configuration name="TestCal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.aop.example.TestCal" />
       <module name="spring6-aop" />
@@ -100,17 +97,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCar.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-reflect" />
+    <configuration name="TestAop.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.reflect.*" />
+          <option name="PATTERN" value="com.ljx.spring6.aop.annoaop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.reflect" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.reflect.TestCar" />
-      <option name="METHOD_NAME" value="test02" />
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.aop.annoaop" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.aop.annoaop.TestAop" />
+      <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAop.testAdd" />
         <item itemvalue="Application.TestCal" />
         <item itemvalue="Application.TestUser" />
         <item itemvalue="JUnit.TestCar.test04" />
         <item itemvalue="JUnit.TestCar.test03" />
-        <item itemvalue="JUnit.TestCar.test02" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +171,8 @@
       <workItem from="1740814776671" duration="5992000" />
       <workItem from="1740885645645" duration="17862000" />
       <workItem from="1740929770177" duration="804000" />
-      <workItem from="1740977724194" duration="13745000" />
+      <workItem from="1740977724194" duration="14948000" />
+      <workItem from="1741054560546" duration="5880000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -312,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740980904486</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="动态代理">
+      <option name="closed" value="true" />
+      <created>1740994115902</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1740994115902</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +378,7 @@
     <MESSAGE value="java反射-获取class对象，获取构造方法" />
     <MESSAGE value="java反射-获取属性，属性赋值。获取方法，invoke执行方法" />
     <MESSAGE value="手写Ioc容器-属性注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="手写Ioc容器-属性注入" />
+    <MESSAGE value="动态代理" />
+    <option name="LAST_COMMIT_MESSAGE" value="动态代理" />
   </component>
 </project>
