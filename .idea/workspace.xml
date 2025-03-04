@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="动态代理">
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/CalculatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/TestAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/resources/bean.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="基于注解的aop，五种通知方式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/ljx/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +167,7 @@
       <workItem from="1740885645645" duration="17862000" />
       <workItem from="1740929770177" duration="804000" />
       <workItem from="1740977724194" duration="14948000" />
-      <workItem from="1741054560546" duration="5880000" />
+      <workItem from="1741054560546" duration="8066000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -318,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740994115902</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="基于注解的aop，五种通知方式">
+      <option name="closed" value="true" />
+      <created>1741061626484</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741061626484</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +382,7 @@
     <MESSAGE value="java反射-获取属性，属性赋值。获取方法，invoke执行方法" />
     <MESSAGE value="手写Ioc容器-属性注入" />
     <MESSAGE value="动态代理" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态代理" />
+    <MESSAGE value="基于注解的aop，五种通知方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="基于注解的aop，五种通知方式" />
   </component>
 </project>
