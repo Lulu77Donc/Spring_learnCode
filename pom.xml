@@ -15,6 +15,7 @@
         <module>spring6-reflect</module>
         <module>ljx.spring</module>
         <module>spring6-aop</module>
+        <module>spring6-junit</module>
     </modules>
 
     <properties>
@@ -30,6 +31,7 @@
             <version>6.2.1</version>
         </dependency>
 
+        <!--junit5依赖-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -47,6 +49,20 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>6.0.2</version>
+        </dependency>
+
+        <!--spring整合junit依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>6.2.1</version>
+        </dependency>
+
+        <!--junit测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
         </dependency>
     </dependencies>
 
