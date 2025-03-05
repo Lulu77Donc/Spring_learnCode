@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="基于xml的aop：五种通知方式">
-      <change afterPath="$PROJECT_DIR$/spring6-junit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/ljx/spring6/junit/junit4/SpringTestJunit4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/ljx/spring6/junit/junit5/SpringTestJunit5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/ljx/spring6/junit/junit5/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/resources/bean.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring整合junit4，junit5，无需手动创建Ioc容器">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/JdbcTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -48,10 +49,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/JavaWeb_learn/Spring_learnCode",
+    "last_opened_file_path": "D:/JavaWeb_learn/Spring_learnCode/spring-jdbc-tx/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,42 +63,85 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "04929b1fb3e6d1bef608b13c4c69cb95",
+    "spring.configuration.checksum": "58812782517ccabadd96a14310a46714",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaWeb_learn\Spring_learnCode\spring-jdbc-tx\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ljx.spring6.aop.xmlaop" />
       <recent name="com.ljx.spring6.aop.annoaop" />
       <recent name="com.ljx.spring6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpringTestJunit4.testUser4">
-    <configuration name="TestCal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.aop.example.TestCal" />
-      <module name="spring6-aop" />
+  <component name="RunManager" selected="JUnit.JdbcTemplateTest.testSelectForValue">
+    <configuration name="JdbcTemplateTest.testSelectForList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jdbc-tx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.aop.example.*" />
+          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testSelectForList" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTestJunit4.testUser4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-junit" />
+    <configuration name="JdbcTemplateTest.testSelectForValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jdbc-tx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.junit.junit4.*" />
+          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.junit.junit4" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.junit.junit4.SpringTestJunit4" />
-      <option name="METHOD_NAME" value="testUser4" />
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testSelectForValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateTest.testSelectObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jdbc-tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testSelectObject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jdbc-tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,45 +163,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAop.testAdd (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-aop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.aop.xmlaop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.aop.xmlaop" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.aop.xmlaop.TestAop" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAop.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-aop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.aop.annoaop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.aop.annoaop" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.aop.annoaop.TestAop" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringTestJunit4.testUser4" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testSelectForValue" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testSelectForList" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testSelectObject" />
         <item itemvalue="JUnit.SpringTestJunit5.testUser" />
-        <item itemvalue="JUnit.TestAop.testAdd (1)" />
-        <item itemvalue="JUnit.TestAop.testAdd" />
-        <item itemvalue="Application.TestCal" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +190,9 @@
       <workItem from="1740885645645" duration="17862000" />
       <workItem from="1740929770177" duration="804000" />
       <workItem from="1740977724194" duration="14948000" />
-      <workItem from="1741054560546" duration="11501000" />
+      <workItem from="1741054560546" duration="12803000" />
+      <workItem from="1741077372853" duration="3968000" />
+      <workItem from="1741135114973" duration="5115000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -347,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741071711963</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="spring整合junit4，junit5，无需手动创建Ioc容器">
+      <option name="closed" value="true" />
+      <created>1741074043979</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1741074043979</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +434,7 @@
     <MESSAGE value="基于注解的aop，五种通知方式" />
     <MESSAGE value="基于注解aop，重复切入点表达式" />
     <MESSAGE value="基于xml的aop：五种通知方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于xml的aop：五种通知方式" />
+    <MESSAGE value="spring整合junit4，junit5，无需手动创建Ioc容器" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring整合junit4，junit5，无需手动创建Ioc容器" />
   </component>
 </project>
