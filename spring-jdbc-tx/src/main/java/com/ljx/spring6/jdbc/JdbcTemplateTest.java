@@ -1,17 +1,22 @@
 package com.ljx.spring6.jdbc;
 
 import org.junit.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 import java.util.List;
 
 @SpringJUnitConfig(locations = "classpath:bean.xml")
+/*@ExtendWith(SpringExtension.class)  // JUnit 5 需要使用 @ExtendWith
+@ContextConfiguration(locations = "classpath:bean.xml")  // 确保 bean.xml 在 classpath 里*/
 public class JdbcTemplateTest {
 
 //    @Autowired

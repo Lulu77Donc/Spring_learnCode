@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring整合junit4，junit5，无需手动创建Ioc容器">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/JdbcTemplateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring控制jdbc操作crud">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/JdbcTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/JdbcTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -45,33 +39,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/JavaWeb_learn/Spring_learnCode/spring-jdbc-tx/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "58812782517ccabadd96a14310a46714",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaWeb_learn/Spring_learnCode/spring-jdbc-tx/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3c45bfbabaa6b88bb9d6c72a9aac7a69&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaWeb_learn\Spring_learnCode\spring-jdbc-tx\src\main\resources" />
@@ -82,7 +76,7 @@
       <recent name="com.ljx.spring6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcTemplateTest.testSelectForValue">
+  <component name="RunManager" selected="JUnit.TestBookTx.testByBook">
     <configuration name="JdbcTemplateTest.testSelectForList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-jdbc-tx" />
       <extension name="coverage">
@@ -131,22 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-jdbc-tx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringTestJunit5.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring6-junit" />
       <extension name="coverage">
@@ -163,13 +141,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestBookTx.testByBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jdbc-tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ljx.spring6.tx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.tx" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.tx.TestBookTx" />
+      <option name="METHOD_NAME" value="testByBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JdbcTemplateTest.testSelectForValue" />
+        <item itemvalue="JUnit.TestBookTx.testByBook" />
         <item itemvalue="JUnit.JdbcTemplateTest.testSelectForList" />
+        <item itemvalue="JUnit.JdbcTemplateTest.testSelectForValue" />
         <item itemvalue="JUnit.JdbcTemplateTest.testSelectObject" />
         <item itemvalue="JUnit.SpringTestJunit5.testUser" />
-        <item itemvalue="JUnit.JdbcTemplateTest.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +186,11 @@
       <workItem from="1740977724194" duration="14948000" />
       <workItem from="1741054560546" duration="12803000" />
       <workItem from="1741077372853" duration="3968000" />
-      <workItem from="1741135114973" duration="5115000" />
+      <workItem from="1741135114973" duration="6993000" />
+      <workItem from="1741145394652" duration="962000" />
+      <workItem from="1741165911025" duration="2766000" />
+      <workItem from="1741230432154" duration="2442000" />
+      <workItem from="1741247177861" duration="3133000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -370,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741074043979</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="spring控制jdbc操作crud">
+      <option name="closed" value="true" />
+      <created>1741140302566</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1741140302566</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,6 +441,7 @@
     <MESSAGE value="基于注解aop，重复切入点表达式" />
     <MESSAGE value="基于xml的aop：五种通知方式" />
     <MESSAGE value="spring整合junit4，junit5，无需手动创建Ioc容器" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring整合junit4，junit5，无需手动创建Ioc容器" />
+    <MESSAGE value="spring控制jdbc操作crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring控制jdbc操作crud" />
   </component>
 </project>

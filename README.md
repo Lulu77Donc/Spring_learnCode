@@ -228,3 +228,10 @@ proxy.add(3, 5);
 代理对象是 JDK 生成的类，它实现了 Calculator 接口，但方法内部并没有真正执行 add() 逻辑，而是调用 InvocationHandler.invoke() 方法。
 Proxy.newProxyInstance() 会在运行时生成 $Proxy0 代理类，该类的 add() 方法内部直接调用 h.invoke()。
 h.invoke() 方法执行 日志增强逻辑 + 反射调用目标对象方法，最终返回方法结果。
+
+# 事务
+关于事务，主要是用于service控制dao层，为避免逻辑报错，而数据库数据改动。
+开启事务需要在xml配置文件中加上注解驱动，接着在要控制事务方法或类上加上注解@Transactional(propagation=...)
+这里propagation后接的一般为REQUIRES_NEW和REQUIRED，前者是开启新的事务，比如我们在service再加上一个service类，这里我用的是checkoutservice
+我们在这个类里操作bookservice，两个都有事务注解，这里会当成两个注解，如果第一个执行成功，第二个失败，那么第一个事务完成就结束了，第二个事务失败回滚。
+后者是都是同一个事务，其中一个失败都回滚
