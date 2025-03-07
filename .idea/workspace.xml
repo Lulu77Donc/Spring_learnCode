@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring控制jdbc操作crud">
+      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/tx/TestAnno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/tx/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/JdbcTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/jdbc/JdbcTemplateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +77,7 @@
       <recent name="com.ljx.spring6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestBookTx.testByBook">
+  <component name="RunManager" selected="JUnit.TestAnno.testTxAllAnnoatation">
     <configuration name="JdbcTemplateTest.testSelectForList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-jdbc-tx" />
       <extension name="coverage">
@@ -125,17 +126,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTestJunit5.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-junit" />
+    <configuration name="TestAnno.testTxAllAnnoatation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jdbc-tx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.junit.junit5.*" />
+          <option name="PATTERN" value="com.ljx.spring6.tx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.junit.junit5" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.junit.junit5.SpringTestJunit5" />
-      <option name="METHOD_NAME" value="testUser" />
+      <option name="PACKAGE_NAME" value="com.ljx.spring6.tx" />
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.tx.TestAnno" />
+      <option name="METHOD_NAME" value="testTxAllAnnoatation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAnno.testTxAllAnnoatation" />
         <item itemvalue="JUnit.TestBookTx.testByBook" />
         <item itemvalue="JUnit.JdbcTemplateTest.testSelectForList" />
         <item itemvalue="JUnit.JdbcTemplateTest.testSelectForValue" />
         <item itemvalue="JUnit.JdbcTemplateTest.testSelectObject" />
-        <item itemvalue="JUnit.SpringTestJunit5.testUser" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +191,9 @@
       <workItem from="1741145394652" duration="962000" />
       <workItem from="1741165911025" duration="2766000" />
       <workItem from="1741230432154" duration="2442000" />
-      <workItem from="1741247177861" duration="3133000" />
+      <workItem from="1741247177861" duration="3379000" />
+      <workItem from="1741265933794" duration="85000" />
+      <workItem from="1741317473639" duration="933000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
