@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="spring控制jdbc操作crud">
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/tx/TestAnno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/ljx/spring6/tx/config/SpringConfig.java" afterDir="false" />
+    <list default="true" id="19007ba1-ab06-42cc-a246-df813abad8e1" name="Changes" comment="全注解配置事务">
+      <change afterPath="$PROJECT_DIR$/spring6-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-resources/src/main/java/com/ljx/spring6/resources/ClassPathResourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-resources/src/main/java/com/ljx/spring6/resources/FileSystemResourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-resources/src/main/java/com/ljx/spring6/resources/UrlResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-resources/src/main/resources/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,57 +76,51 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaWeb_learn\Spring_learnCode\spring-jdbc-tx\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaWeb_learn\Spring_learnCode" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ljx.spring6.aop.xmlaop" />
       <recent name="com.ljx.spring6.aop.annoaop" />
       <recent name="com.ljx.spring6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestAnno.testTxAllAnnoatation">
-    <configuration name="JdbcTemplateTest.testSelectForList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-jdbc-tx" />
+  <component name="RunManager" selected="Application.FileSystemResourceDemo">
+    <configuration name="ClassPathResourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.resources.ClassPathResourceDemo" />
+      <module name="spring6-resources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
+          <option name="PATTERN" value="com.ljx.spring6.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="testSelectForList" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateTest.testSelectForValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-jdbc-tx" />
+    <configuration name="FileSystemResourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.resources.FileSystemResourceDemo" />
+      <module name="spring6-resources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
+          <option name="PATTERN" value="com.ljx.spring6.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="testSelectForValue" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateTest.testSelectObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-jdbc-tx" />
+    <configuration name="UrlResources" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.resources.UrlResources" />
+      <module name="spring6-resources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ljx.spring6.jdbc.*" />
+          <option name="PATTERN" value="com.ljx.spring6.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ljx.spring6.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.ljx.spring6.jdbc.JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="testSelectObject" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileSystemResourceDemo" />
+        <item itemvalue="Application.ClassPathResourceDemo" />
+        <item itemvalue="Application.UrlResources" />
         <item itemvalue="JUnit.TestAnno.testTxAllAnnoatation" />
         <item itemvalue="JUnit.TestBookTx.testByBook" />
-        <item itemvalue="JUnit.JdbcTemplateTest.testSelectForList" />
-        <item itemvalue="JUnit.JdbcTemplateTest.testSelectForValue" />
-        <item itemvalue="JUnit.JdbcTemplateTest.testSelectObject" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +192,8 @@
       <workItem from="1741230432154" duration="2442000" />
       <workItem from="1741247177861" duration="3379000" />
       <workItem from="1741265933794" duration="85000" />
-      <workItem from="1741317473639" duration="933000" />
+      <workItem from="1741317473639" duration="1660000" />
+      <workItem from="1741588436311" duration="3543000" />
     </task>
     <task id="LOCAL-00001" summary="spring学习记录">
       <option name="closed" value="true" />
@@ -379,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741140302566</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="全注解配置事务">
+      <option name="closed" value="true" />
+      <created>1741318500082</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1741318500082</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,6 +453,7 @@
     <MESSAGE value="基于xml的aop：五种通知方式" />
     <MESSAGE value="spring整合junit4，junit5，无需手动创建Ioc容器" />
     <MESSAGE value="spring控制jdbc操作crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring控制jdbc操作crud" />
+    <MESSAGE value="全注解配置事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="全注解配置事务" />
   </component>
 </project>
