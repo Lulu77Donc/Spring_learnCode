@@ -30,14 +30,14 @@ public class UserController {
 <bean id="userController" class="com.ljx.spring6.iocxml.auto.controller.UserController"
           autowire="byType">
 
-    </bean>
-    <bean id="userService" class="com.ljx.spring6.iocxml.auto.service.UserServiceImpl"
+</bean>
+<bean id="userService" class="com.ljx.spring6.iocxml.auto.service.UserServiceImpl"
           autowire="byType">
 
-    </bean>
-    <bean id="userDao" class="com.ljx.spring6.iocxml.auto.dao.UserDaoImpl">
+</bean>
+<bean id="userDao" class="com.ljx.spring6.iocxml.auto.dao.UserDaoImpl">
 
-    </bean>
+</bean>
 ```
 spring会从属性中找到对应xml上配置的bean，这时候会根据你标签autowired去选择对应自动装配的方法
 
